@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
+using System.IO;
 using System.Linq;
 using System.Text;
 
@@ -22,10 +24,8 @@ namespace dasz.LinqCube.Example
         public static readonly int DATA_COUNT = 50000;
         public static readonly DateTime MIN_DATE = new DateTime(DateTime.Today.Year - 10, 1, 1);
         public static readonly DateTime MAX_DATE = new DateTime(DateTime.Today.Year + 1, 1, 1);
-        public static int CURRENT_YEAR { get { return MAX_DATE.Year - 1; } }
-
-        private static List<Person> _persons;
-        public static readonly string[] OFFICES = new[]
+        public static readonly int CURRENT_YEAR = MAX_DATE.Year - 1;
+        public static readonly string[] OFFICES =
         {
             "New York",
             "Vienna",
@@ -35,25 +35,22 @@ namespace dasz.LinqCube.Example
             "Rio",
         };
 
-        public IQueryable<Person> Persons
+
+        private IList<Person> persons;
+        public IQueryable<Person> Persons => persons.AsQueryable();
+
+        public Repository()
         {
-            get
-            {
-                if (_persons == null)
-                {
-                    CreateTestData();
-                }
-                return _persons.AsQueryable();
-            }
+            // CreateRandomTestData(true);
+            CreateFixedTestData();
         }
 
-        private void CreateTestData()
+        private void CreateRandomTestData(bool toOutput = false)
         {
             Console.WriteLine("Initializing repository");
+            persons = new List<Person>(DATA_COUNT);
 
             Random rnd = new Random();
-
-            _persons = new List<Person>(DATA_COUNT);
             for (int i = 0; i < DATA_COUNT; i++)
             {
                 DateTime? empStart = MIN_DATE.AddDays(rnd.Next(3650));
@@ -65,7 +62,7 @@ namespace dasz.LinqCube.Example
 
                 if (rnd.NextDouble() > 0.9) empStart = empEnd = null;
 
-                _persons.Add(new Person()
+                persons.Add(new Person()
                 {
                     ID = i + 1,
                     Gender = rnd.Next(2) == 0 ? "F" : "M",
@@ -78,12 +75,72 @@ namespace dasz.LinqCube.Example
                 });
             }
 
+            if (toOutput)
+            {
+                using (var output = new StreamWriter("..\\..\\data\\persons.csv"))
+                {
+                    foreach (var person in persons)
+                    {
+                        var builder = new StringBuilder();
+                        builder.Append(person.ID);
+                        builder.Append(";");
+                        builder.Append(person.Gender);
+                        builder.Append(";");
+                        builder.Append(person.Salary);
+                        builder.Append(";");
+                        builder.Append(person.Birthday);
+                        builder.Append(";");
+                        builder.Append(person.EmploymentStart);
+                        builder.Append(";");
+                        builder.Append(person.EmploymentEnd);
+                        builder.Append(";");
+                        builder.Append(person.Office);
+                        builder.Append(";");
+                        builder.Append(person.Active);
+                        output.WriteLine(builder.ToString());
+                    }
+                }
+            }
+
             Console.WriteLine("Initializing repository finished");
+        }
+
+        private void CreateFixedTestData()
+        {
+            Console.WriteLine("Initializing repository");
+            var lines = File.ReadAllLines("..\\..\\data\\persons.csv");
+            persons = new List<Person>(lines.Length);
+
+            foreach (var line in lines)
+            {
+                var fields = line.Split(';');
+
+                persons.Add(new Person()
+                {
+                    ID = Convert.ToInt32(fields[0], CultureInfo.CurrentCulture),
+                    Gender = fields[1],
+                    Salary = Convert.ToDecimal(fields[2], CultureInfo.CurrentCulture),
+                    Birthday = DateTime.ParseExact(fields[3], "dd/MM/yyyy HH:mm:ss", CultureInfo.InvariantCulture),
+                    EmploymentStart = string.IsNullOrWhiteSpace(fields[4]) ? (DateTime?)null : DateTime.ParseExact(fields[4], "dd/MM/yyyy HH:mm:ss", CultureInfo.InvariantCulture),
+                    EmploymentEnd = string.IsNullOrWhiteSpace(fields[5]) ? (DateTime?)null : DateTime.ParseExact(fields[5], "dd/MM/yyyy HH:mm:ss", CultureInfo.InvariantCulture),
+                    Office = fields[6],
+                    Active = bool.Parse(fields[7])
+                });
+            }
+        }
+
+        protected virtual void Dispose(bool disposing)
+        {
+            if (disposing)
+            {
+                // Close your database connection here
+            }
         }
 
         public void Dispose()
         {
-            // Close your database connection here
+            Dispose(true);
+            GC.SuppressFinalize(this);
         }
     }
 }

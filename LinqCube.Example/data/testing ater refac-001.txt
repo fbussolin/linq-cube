@@ -1,0 +1,358 @@
+Testing Linq-Cube v1.3.2.0
+Building DateTime dimensions
+Building DateTime dimensions2
+Building string dimensions
+Building decimal dimensions
+Building bool dimensions
+Building measures
+Building queries
+Cube ran for 00:00:06.2023247
+
+gender over birthday
+==================
+
+M-1978: 643
+M-1979: 658
+M-1980: 616
+M-1981: 601
+M-1982: 617
+M-1983: 641
+M-1984: 603
+M-1985: 594
+M-1986: 649
+M-1987: 629
+M-1988: 623
+M-1989: 619
+M-1990: 604
+M-1991: 661
+M-1992: 613
+M-1993: 618
+M-1994: 646
+M-1995: 592
+M-1996: 636
+M-1997: 586
+M-1998: 675
+M-1999: 633
+M-2000: 646
+M-2001: 622
+M-2002: 612
+M-2003: 3
+M-2004: 0
+M-2005: 0
+M-2006: 0
+M-2007: 0
+M-2008: 0
+M-2009: 0
+M-2010: 0
+M-2011: 0
+M-2012: 0
+M-2013: 0
+M-2014: 0
+M-2015: 0
+M-2016: 0
+M-2017: 0
+M-2018: 0
+M-2019: 0
+M-2020: 0
+F-1978: 592
+F-1979: 586
+F-1980: 592
+F-1981: 615
+F-1982: 658
+F-1983: 627
+F-1984: 626
+F-1985: 608
+F-1986: 587
+F-1987: 616
+F-1988: 597
+F-1989: 616
+F-1990: 583
+F-1991: 633
+F-1992: 616
+F-1993: 660
+F-1994: 626
+F-1995: 675
+F-1996: 615
+F-1997: 665
+F-1998: 678
+F-1999: 645
+F-2000: 610
+F-2001: 586
+F-2002: 642
+F-2003: 4
+F-2004: 0
+F-2005: 0
+F-2006: 0
+F-2007: 0
+F-2008: 0
+F-2009: 0
+F-2010: 0
+F-2011: 0
+F-2012: 0
+F-2013: 0
+F-2014: 0
+F-2015: 0
+F-2016: 0
+F-2017: 0
+F-2018: 0
+F-2019: 0
+F-2020: 0
+salary over gender and date of employment
+==================
+
+2010
+==================
+Salary:    up to 1000, M: 330 W: 310, monthStart:  22
+Salary:   1000 - 1100, M:  54 W:  57, monthStart:   3
+Salary:   1100 - 1200, M:  71 W:  57, monthStart:   3
+Salary:   1200 - 1300, M:  65 W:  72, monthStart:   4
+Salary:   1300 - 1400, M:  55 W:  77, monthStart:   3
+Salary:   1400 - 1500, M:  66 W:  55, monthStart:   1
+Salary:   1500 - 1600, M:  88 W:  79, monthStart:   4
+Salary:   1600 - 1700, M:  65 W:  75, monthStart:   5
+Salary:   1700 - 1800, M:  69 W:  71, monthStart:   4
+Salary:   1800 - 1900, M:  55 W:  63, monthStart:   2
+Salary:   1900 - 2000, M:  58 W:  84, monthStart:   5
+Salary:   2000 - 2100, M:  72 W:  47, monthStart:   2
+Salary:   2100 - 2200, M:  64 W:  72, monthStart:   5
+Salary:   2200 - 2300, M:  70 W:  75, monthStart:   4
+Salary:   2300 - 2400, M:  69 W:  74, monthStart:   5
+Salary:   2400 - 2500, M:  54 W:  62, monthStart:   5
+Salary: 2500 and more, M: 311 W: 339, monthStart:  25
+
+2011
+==================
+Salary:    up to 1000, M: 354 W: 355, monthStart:  27
+Salary:   1000 - 1100, M:  65 W:  59, monthStart:   8
+Salary:   1100 - 1200, M:  65 W:  63, monthStart:   2
+Salary:   1200 - 1300, M:  83 W:  63, monthStart:   6
+Salary:   1300 - 1400, M:  54 W:  57, monthStart:   1
+Salary:   1400 - 1500, M:  69 W:  76, monthStart:   3
+Salary:   1500 - 1600, M:  64 W:  73, monthStart:   2
+Salary:   1600 - 1700, M:  59 W:  78, monthStart:   2
+Salary:   1700 - 1800, M:  79 W:  76, monthStart:   9
+Salary:   1800 - 1900, M:  80 W:  75, monthStart:   6
+Salary:   1900 - 2000, M:  64 W:  67, monthStart:   3
+Salary:   2000 - 2100, M:  75 W:  70, monthStart:   9
+Salary:   2100 - 2200, M:  69 W:  64, monthStart:   3
+Salary:   2200 - 2300, M:  71 W:  62, monthStart:   2
+Salary:   2300 - 2400, M:  72 W:  71, monthStart:   7
+Salary:   2400 - 2500, M:  80 W:  77, monthStart:   8
+Salary: 2500 and more, M: 305 W: 314, monthStart:  23
+
+2012
+==================
+Salary:    up to 1000, M: 308 W: 306, monthStart:  25
+Salary:   1000 - 1100, M:  83 W:  80, monthStart:   5
+Salary:   1100 - 1200, M:  63 W:  54, monthStart:   0
+Salary:   1200 - 1300, M:  60 W:  76, monthStart:   4
+Salary:   1300 - 1400, M:  74 W:  63, monthStart:   4
+Salary:   1400 - 1500, M:  52 W:  80, monthStart:   2
+Salary:   1500 - 1600, M:  66 W:  69, monthStart:   1
+Salary:   1600 - 1700, M:  73 W:  56, monthStart:   4
+Salary:   1700 - 1800, M:  74 W:  68, monthStart:   1
+Salary:   1800 - 1900, M:  75 W:  56, monthStart:   4
+Salary:   1900 - 2000, M:  60 W:  51, monthStart:   1
+Salary:   2000 - 2100, M:  71 W:  62, monthStart:   2
+Salary:   2100 - 2200, M:  76 W:  69, monthStart:   6
+Salary:   2200 - 2300, M:  64 W:  68, monthStart:   3
+Salary:   2300 - 2400, M:  57 W:  61, monthStart:   6
+Salary:   2400 - 2500, M:  59 W:  71, monthStart:   5
+Salary: 2500 and more, M: 311 W: 329, monthStart:  16
+
+2013
+==================
+Salary:    up to 1000, M: 345 W: 375, monthStart:  29
+Salary:   1000 - 1100, M:  76 W:  62, monthStart:   3
+Salary:   1100 - 1200, M:  66 W:  60, monthStart:   5
+Salary:   1200 - 1300, M:  66 W:  69, monthStart:   5
+Salary:   1300 - 1400, M:  66 W:  62, monthStart:   2
+Salary:   1400 - 1500, M:  64 W:  92, monthStart:   5
+Salary:   1500 - 1600, M:  64 W:  78, monthStart:   3
+Salary:   1600 - 1700, M:  58 W:  74, monthStart:   1
+Salary:   1700 - 1800, M:  69 W:  69, monthStart:   3
+Salary:   1800 - 1900, M:  66 W:  70, monthStart:   2
+Salary:   1900 - 2000, M:  71 W:  57, monthStart:   1
+Salary:   2000 - 2100, M:  63 W:  73, monthStart:   4
+Salary:   2100 - 2200, M:  69 W:  72, monthStart:   8
+Salary:   2200 - 2300, M:  75 W:  70, monthStart:   3
+Salary:   2300 - 2400, M:  70 W:  63, monthStart:   3
+Salary:   2400 - 2500, M:  64 W:  52, monthStart:   4
+Salary: 2500 and more, M: 327 W: 344, monthStart:  20
+
+2014
+==================
+Salary:    up to 1000, M: 369 W: 338, monthStart:  30
+Salary:   1000 - 1100, M:  66 W:  58, monthStart:   8
+Salary:   1100 - 1200, M:  73 W:  68, monthStart:   3
+Salary:   1200 - 1300, M:  58 W:  85, monthStart:   5
+Salary:   1300 - 1400, M:  64 W:  75, monthStart:   8
+Salary:   1400 - 1500, M:  71 W:  66, monthStart:   7
+Salary:   1500 - 1600, M:  64 W:  59, monthStart:   8
+Salary:   1600 - 1700, M:  71 W:  71, monthStart:  10
+Salary:   1700 - 1800, M:  71 W:  66, monthStart:   7
+Salary:   1800 - 1900, M:  72 W:  60, monthStart:   5
+Salary:   1900 - 2000, M:  60 W:  58, monthStart:   3
+Salary:   2000 - 2100, M:  60 W:  73, monthStart:   6
+Salary:   2100 - 2200, M:  71 W:  62, monthStart:   4
+Salary:   2200 - 2300, M:  76 W:  69, monthStart:   5
+Salary:   2300 - 2400, M:  64 W:  61, monthStart:   3
+Salary:   2400 - 2500, M:  66 W:  69, monthStart:   2
+Salary: 2500 and more, M: 335 W: 328, monthStart:  23
+
+2015
+==================
+Salary:    up to 1000, M: 345 W: 339, monthStart:  25
+Salary:   1000 - 1100, M:  78 W:  81, monthStart:   4
+Salary:   1100 - 1200, M:  70 W:  80, monthStart:   4
+Salary:   1200 - 1300, M:  76 W:  77, monthStart:   4
+Salary:   1300 - 1400, M:  58 W:  62, monthStart:   1
+Salary:   1400 - 1500, M:  62 W:  71, monthStart:   4
+Salary:   1500 - 1600, M:  65 W:  58, monthStart:   8
+Salary:   1600 - 1700, M:  69 W:  74, monthStart:   5
+Salary:   1700 - 1800, M:  70 W:  68, monthStart:   3
+Salary:   1800 - 1900, M:  66 W:  59, monthStart:   3
+Salary:   1900 - 2000, M:  59 W:  64, monthStart:   3
+Salary:   2000 - 2100, M:  69 W:  64, monthStart:   2
+Salary:   2100 - 2200, M:  54 W:  63, monthStart:   3
+Salary:   2200 - 2300, M:  66 W:  62, monthStart:   3
+Salary:   2300 - 2400, M:  59 W:  72, monthStart:   9
+Salary:   2400 - 2500, M:  61 W:  63, monthStart:   5
+Salary: 2500 and more, M: 318 W: 342, monthStart:  26
+
+2016
+==================
+Salary:    up to 1000, M: 370 W: 357, monthStart:  22
+Salary:   1000 - 1100, M:  67 W:  71, monthStart:   1
+Salary:   1100 - 1200, M:  61 W:  62, monthStart:   3
+Salary:   1200 - 1300, M:  68 W:  71, monthStart:   5
+Salary:   1300 - 1400, M:  61 W:  59, monthStart:   7
+Salary:   1400 - 1500, M:  65 W:  65, monthStart:   3
+Salary:   1500 - 1600, M:  69 W:  66, monthStart:   8
+Salary:   1600 - 1700, M:  56 W:  73, monthStart:   2
+Salary:   1700 - 1800, M:  66 W:  65, monthStart:   2
+Salary:   1800 - 1900, M:  58 W:  67, monthStart:   9
+Salary:   1900 - 2000, M:  68 W:  69, monthStart:   4
+Salary:   2000 - 2100, M:  82 W:  73, monthStart:   5
+Salary:   2100 - 2200, M:  68 W:  60, monthStart:   1
+Salary:   2200 - 2300, M:  69 W:  82, monthStart:   2
+Salary:   2300 - 2400, M:  55 W:  66, monthStart:   8
+Salary:   2400 - 2500, M:  64 W:  65, monthStart:   0
+Salary: 2500 and more, M: 363 W: 334, monthStart:  16
+
+2017
+==================
+Salary:    up to 1000, M: 313 W: 295, monthStart:  21
+Salary:   1000 - 1100, M:  73 W:  74, monthStart:   9
+Salary:   1100 - 1200, M:  64 W:  67, monthStart:   7
+Salary:   1200 - 1300, M:  65 W:  76, monthStart:   5
+Salary:   1300 - 1400, M:  75 W:  68, monthStart:   1
+Salary:   1400 - 1500, M:  84 W:  66, monthStart:   8
+Salary:   1500 - 1600, M:  69 W:  62, monthStart:   4
+Salary:   1600 - 1700, M:  56 W:  75, monthStart:   3
+Salary:   1700 - 1800, M:  69 W:  77, monthStart:   7
+Salary:   1800 - 1900, M:  58 W:  65, monthStart:   1
+Salary:   1900 - 2000, M:  57 W:  69, monthStart:   4
+Salary:   2000 - 2100, M:  61 W:  73, monthStart:   4
+Salary:   2100 - 2200, M:  79 W:  64, monthStart:   7
+Salary:   2200 - 2300, M:  53 W:  69, monthStart:   1
+Salary:   2300 - 2400, M:  64 W:  66, monthStart:   2
+Salary:   2400 - 2500, M:  77 W:  63, monthStart:   7
+Salary: 2500 and more, M: 331 W: 341, monthStart:  21
+
+2018
+==================
+Salary:    up to 1000, M: 364 W: 341, monthStart:  15
+Salary:   1000 - 1100, M:  58 W:  72, monthStart:   4
+Salary:   1100 - 1200, M:  80 W:  58, monthStart:   5
+Salary:   1200 - 1300, M:  85 W:  72, monthStart:   6
+Salary:   1300 - 1400, M:  66 W:  70, monthStart:   3
+Salary:   1400 - 1500, M:  62 W:  67, monthStart:   3
+Salary:   1500 - 1600, M:  79 W:  64, monthStart:   1
+Salary:   1600 - 1700, M:  69 W:  75, monthStart:   3
+Salary:   1700 - 1800, M: 100 W:  85, monthStart:   7
+Salary:   1800 - 1900, M:  64 W:  81, monthStart:   5
+Salary:   1900 - 2000, M:  61 W:  65, monthStart:   3
+Salary:   2000 - 2100, M:  86 W:  55, monthStart:   3
+Salary:   2100 - 2200, M:  59 W:  73, monthStart:   3
+Salary:   2200 - 2300, M:  72 W:  60, monthStart:   3
+Salary:   2300 - 2400, M:  67 W:  74, monthStart:   9
+Salary:   2400 - 2500, M:  68 W:  73, monthStart:   5
+Salary: 2500 and more, M: 341 W: 327, monthStart:  25
+
+2019
+==================
+Salary:    up to 1000, M: 341 W: 327, monthStart:  14
+Salary:   1000 - 1100, M:  50 W:  65, monthStart:   3
+Salary:   1100 - 1200, M:  53 W:  53, monthStart:   4
+Salary:   1200 - 1300, M:  76 W:  74, monthStart:   7
+Salary:   1300 - 1400, M:  90 W:  71, monthStart:   5
+Salary:   1400 - 1500, M:  62 W:  62, monthStart:   1
+Salary:   1500 - 1600, M:  68 W:  61, monthStart:   3
+Salary:   1600 - 1700, M:  75 W:  62, monthStart:   2
+Salary:   1700 - 1800, M:  58 W:  58, monthStart:   3
+Salary:   1800 - 1900, M:  67 W:  72, monthStart:   7
+Salary:   1900 - 2000, M:  65 W:  62, monthStart:   4
+Salary:   2000 - 2100, M:  54 W:  69, monthStart:   2
+Salary:   2100 - 2200, M:  62 W:  61, monthStart:   3
+Salary:   2200 - 2300, M:  83 W:  76, monthStart:   7
+Salary:   2300 - 2400, M:  65 W:  80, monthStart:   8
+Salary:   2400 - 2500, M:  62 W:  74, monthStart:   5
+Salary: 2500 and more, M: 342 W: 312, monthStart:  18
+
+2020
+==================
+Salary:    up to 1000, M:   0 W:   0, monthStart:   0
+Salary:   1000 - 1100, M:   0 W:   0, monthStart:   0
+Salary:   1100 - 1200, M:   0 W:   0, monthStart:   0
+Salary:   1200 - 1300, M:   0 W:   0, monthStart:   0
+Salary:   1300 - 1400, M:   0 W:   0, monthStart:   0
+Salary:   1400 - 1500, M:   0 W:   0, monthStart:   0
+Salary:   1500 - 1600, M:   0 W:   0, monthStart:   0
+Salary:   1600 - 1700, M:   0 W:   0, monthStart:   0
+Salary:   1700 - 1800, M:   0 W:   0, monthStart:   0
+Salary:   1800 - 1900, M:   0 W:   0, monthStart:   0
+Salary:   1900 - 2000, M:   0 W:   0, monthStart:   0
+Salary:   2000 - 2100, M:   0 W:   0, monthStart:   0
+Salary:   2100 - 2200, M:   0 W:   0, monthStart:   0
+Salary:   2200 - 2300, M:   0 W:   0, monthStart:   0
+Salary:   2300 - 2400, M:   0 W:   0, monthStart:   0
+Salary:   2400 - 2500, M:   0 W:   0, monthStart:   0
+Salary: 2500 and more, M:   0 W:   0, monthStart:   0
+
+count currently employed by office
+==================
+
+          |   2010 |   2011 |   2012 |   2013 |   2014 |   2015 |   2016 |   2017 |   2018 |   2019 |   2020
+----------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------
+  New York|   8239 |        |        |        |        |        |        |        |        |        |
+          |    738 |   1435 |   2090 |   2807 |   3432 |   3989 |   4522 |   5011 |   5517 |   5995 |   5612
+starting  |    738 |    713 |    717 |    798 |    745 |    707 |    724 |    722 |    777 |    769 |      0
+active    |    515 |   1003 |   1450 |   1953 |   2407 |   2797 |   3164 |   3508 |   3835 |   4183 |   3916
+          |        |        |        |        |        |        |        |        |        |        |
+    Vienna|   8346 |        |        |        |        |        |        |        |        |        |
+          |    746 |   1474 |   2168 |   2830 |   3429 |   4019 |   4564 |   5084 |   5551 |   5968 |   5610
+starting  |    746 |    746 |    753 |    756 |    739 |    761 |    760 |    773 |    762 |    684 |      0
+active    |    532 |   1039 |   1512 |   1969 |   2390 |   2811 |   3208 |   3572 |   3898 |   4179 |   3932
+          |        |        |        |        |        |        |        |        |        |        |
+    Moscow|   8418 |        |        |        |        |        |        |        |        |        |
+          |    761 |   1540 |   2187 |   2863 |   3470 |   4048 |   4600 |   5075 |   5598 |   6008 |   5636
+starting  |    761 |    801 |    707 |    780 |    744 |    773 |    750 |    743 |    806 |    707 |      0
+active    |    528 |   1090 |   1525 |   2011 |   2447 |   2864 |   3256 |   3604 |   4000 |   4286 |   4025
+          |        |        |        |        |        |        |        |        |        |        |
+    Bejing|   8295 |        |        |        |        |        |        |        |        |        |
+          |    732 |   1471 |   2112 |   2783 |   3417 |   3965 |   4558 |   5071 |   5509 |   5955 |   5619
+starting  |    732 |    761 |    703 |    756 |    745 |    726 |    790 |    761 |    737 |    757 |      0
+active    |    535 |   1037 |   1516 |   1989 |   2419 |   2785 |   3240 |   3611 |   3931 |   4237 |   3981
+          |        |        |        |        |        |        |        |        |        |        |
+    Sydney|   8304 |        |        |        |        |        |        |        |        |        |
+          |    723 |   1477 |   2199 |   2845 |   3400 |   4018 |   4610 |   5098 |   5584 |   6005 |   5660
+starting  |    723 |    769 |    782 |    744 |    702 |    790 |    777 |    704 |    761 |    763 |      0
+active    |    497 |   1034 |   1535 |   1986 |   2366 |   2811 |   3241 |   3554 |   3901 |   4203 |   3963
+          |        |        |        |        |        |        |        |        |        |        |
+       Rio|   8396 |        |        |        |        |        |        |        |        |        |
+          |    746 |   1494 |   2171 |   2801 |   3470 |   4016 |   4535 |   5072 |   5592 |   5981 |   5610
+starting  |    746 |    771 |    730 |    744 |    810 |    719 |    766 |    762 |    792 |    725 |      0
+active    |    529 |   1043 |   1509 |   1947 |   2392 |   2776 |   3138 |   3508 |   3849 |   4120 |   3853
+          |        |        |        |        |        |        |        |        |        |        |
+Finished, hit the anykey to exit
